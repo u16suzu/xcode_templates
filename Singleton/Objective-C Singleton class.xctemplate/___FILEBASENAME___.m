@@ -17,7 +17,7 @@ static ___FILEBASENAMEASIDENTIFIER___ *sharedData_ = nil;
 
 #pragma mark - Public Method
 
-+ (id)sharedInstance {
++ (instancetype)sharedInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedData_ = [___FILEBASENAMEASIDENTIFIER___ new];
@@ -25,7 +25,7 @@ static ___FILEBASENAMEASIDENTIFIER___ *sharedData_ = nil;
     return sharedData_;
 }
 
-- (id)init {
+- (instancetype)init {
     self = [super init];
     if (self) {
         //Initialization

@@ -8,6 +8,6 @@
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : NSObject
 
-+ (___FILEBASENAMEASIDENTIFIER___*)sharedInstance;
++ (instancetype)sharedInstance;
 
 @end
