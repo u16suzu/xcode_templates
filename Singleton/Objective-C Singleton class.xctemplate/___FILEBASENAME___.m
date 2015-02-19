@@ -26,6 +26,7 @@ static ___FILEBASENAMEASIDENTIFIER___ *sharedData_ = nil;
 }
 
 - (instancetype)init {
+    NSAssert(_sharedInstance == nil, @"Only one instance. And use sharedInstance instead.");
     self = [super init];
     if (self) {
         //Initialization
